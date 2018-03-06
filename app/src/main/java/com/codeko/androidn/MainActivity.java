@@ -11,17 +11,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.setTranslationX(-1000f);
     }
 
     public void fade(View view) {
         ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().translationXBy(1000f).setDuration(2000);
-
-//        ImageView homer = (ImageView) findViewById(R.id.homer);
-//        homer.animate().alpha(1f).setDuration(2000);
-
+        bart.animate().rotation(180f).setDuration(2000);
     }
 }
