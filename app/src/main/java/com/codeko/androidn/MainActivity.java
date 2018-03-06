@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void fade(View view) {
         ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().alpha(0f).setDuration(2000);
+        bart.animate().translationY(1000f).setDuration(2000);
 
-        ImageView homer = (ImageView) findViewById(R.id.homer);
-        homer.animate().alpha(1f).setDuration(2000);
+//        ImageView homer = (ImageView) findViewById(R.id.homer);
+//        homer.animate().alpha(1f).setDuration(2000);
 
     }
 }
