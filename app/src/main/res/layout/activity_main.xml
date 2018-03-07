@@ -6,26 +6,41 @@
     android:layout_height="match_parent"
     tools:context="com.codeko.androidn.MainActivity">
 
-    <ImageView
-        android:id="@+id/bart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:contentDescription="@string/bart_simpson"
-        android:onClick="fade"
-        app:srcCompat="@drawable/bart" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/playButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="215dp"
+        android:onClick="playAudio" />
 
-    <ImageView
-        android:id="@+id/homer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:alpha="0"
-        android:contentDescription="@string/homer_simpson"
-        app:srcCompat="@drawable/homer" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/pauseButton"
+        android:layout_below="@+id/playButton"
+        android:layout_alignStart="@+id/playButton"
+        android:onClick="pauseAudio" />
 
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/pauseButton"
+        android:layout_alignStart="@+id/pauseButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrubber"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false" />
 </RelativeLayout>
