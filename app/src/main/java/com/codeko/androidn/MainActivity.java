@@ -1,9 +1,10 @@
 package com.codeko.androidn;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,12 +14,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void fade(View view) {
-        ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().alpha(0f).setDuration(2000);
+    public void buttonTapped(View view) {
 
-        ImageView homer = (ImageView) findViewById(R.id.homer);
-        homer.animate().alpha(1f).setDuration(2000);
+        int id = view.getId();
+        String ourId = "";
+
+        ourId = view.getResources().getResourceEntryName(id);
+
+        int resourceId = getResources().getIdentifier(ourId, "raw", "com.codeko.androidn");
+
+        MediaPlayer mplayer = MediaPlayer.create(this, resourceId);
+        mplayer.start();
+
+        Log.i("button tapped", ourId);
 
     }
 }
