@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.codeko.androidn.MainActivity">
 
-    <ImageView
-        android:id="@+id/bart"
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:contentDescription="@string/bart_simpson"
-        android:onClick="fade"
-        app:srcCompat="@drawable/bart" />
+        android:layout_alignParentStart="true">
 
-    <ImageView
-        android:id="@+id/homer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:alpha="0"
-        android:contentDescription="@string/homer_simpson"
-        app:srcCompat="@drawable/homer" />
-
+        <Button
+            android:id="@+id/guessTheCelebrity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="guessTheCelebrity"
+            android:tag="0"
+            android:text="Guess The Celebrity" />
+    </GridLayout>
 </RelativeLayout>

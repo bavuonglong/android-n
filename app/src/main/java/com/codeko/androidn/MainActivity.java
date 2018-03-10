@@ -1,9 +1,9 @@
 package com.codeko.androidn;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,12 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void fade(View view) {
-        ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().alpha(0f).setDuration(2000);
-
-        ImageView homer = (ImageView) findViewById(R.id.homer);
-        homer.animate().alpha(1f).setDuration(2000);
-
+    public void guessTheCelebrity(View view) {
+        Intent myIntent = new Intent(MainActivity.this, GuessTheCelebrityActivity.class);
+        MainActivity.this.startActivity(myIntent);
     }
+
 }
