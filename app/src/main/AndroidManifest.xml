@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GuessTheCelebrityActivity"></activity>
+        <activity android:name=".GuessTheCelebrityActivity" />
+        <activity android:name=".WhatsThatWeatherActivity"></activity>
     </application>
 
 </manifest>
