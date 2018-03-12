@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.startActivity(myIntent);
     }
 
+    public void hikersWatch(View view) {
+        Intent myIntent = new Intent(MainActivity.this, HikersWatchActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
 }

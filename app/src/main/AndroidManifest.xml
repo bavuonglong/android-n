@@ -3,6 +3,7 @@
     package="com.codeko.androidn">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GuessTheCelebrityActivity" />
-        <activity android:name=".WhatsThatWeatherActivity"></activity>
+        <activity android:name=".WhatsThatWeatherActivity" />
+        <activity android:name=".HikersWatchActivity"></activity>
     </application>
 
 </manifest>
