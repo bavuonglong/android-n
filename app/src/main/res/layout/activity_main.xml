@@ -45,5 +45,16 @@
             android:onClick="hikersWatch"
             android:tag="2"
             android:text="Hikers Watch" />
+
+        <Button
+            android:id="@+id/memorablePlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="center_horizontal"
+            android:onClick="memorablePlaces"
+            android:tag="3"
+            android:text="Memorable Places" />
     </GridLayout>
 </RelativeLayout>

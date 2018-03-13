@@ -28,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.startActivity(myIntent);
     }
 
+    public void memorablePlaces(View view) {
+        Intent myIntent = new Intent(MainActivity.this, MemorablePlacesActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
 }

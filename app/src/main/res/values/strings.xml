@@ -2,4 +2,5 @@
     <string name="app_name">Android N</string>
     <string name="bart_simpson">Bart Simpson</string>
     <string name="homer_simpson">Homer Simpson</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
