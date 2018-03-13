@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(MainActivity.this, MemorablePlacesActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
+
+    public void notes(View view) {
+        Intent myIntent = new Intent(MainActivity.this, NotesActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
 }

@@ -11,7 +11,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:columnCount="2"
-        android:rowCount="2">
+        android:rowCount="3">
 
         <Button
             android:id="@+id/guessTheCelebrity"
@@ -56,5 +56,16 @@
             android:onClick="memorablePlaces"
             android:tag="3"
             android:text="Memorable Places" />
+
+        <Button
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="notes"
+            android:tag="4"
+            android:text="Notes" />
     </GridLayout>
 </RelativeLayout>

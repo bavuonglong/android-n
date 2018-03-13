@@ -3,4 +3,5 @@
     <string name="bart_simpson">Bart Simpson</string>
     <string name="homer_simpson">Homer Simpson</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_notes">NotesActivity</string>
 </resources>
