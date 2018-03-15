@@ -37,4 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(MainActivity.this, NotesActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
+
+    public void newsReader(View view) {
+        Intent myIntent = new Intent(MainActivity.this, NewsReaderActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
 }

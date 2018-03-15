@@ -42,7 +42,9 @@
             android:name=".NotesActivity"
             android:label="@string/title_activity_notes"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NoteEditorActivity"></activity>
+        <activity android:name=".NoteEditorActivity" />
+        <activity android:name=".NewsReaderActivity" />
+        <activity android:name=".ArticleActivity"></activity>
     </application>
 
 </manifest>
